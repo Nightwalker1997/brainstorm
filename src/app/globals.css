@@ -7,82 +7,51 @@
 @tailwind utilities;
 
 :root {
+    --c-bg-darkest: #000000;
+    --c-bg-darker: #152528;
+    --c-bg-dark: #212529;
+    --c-bg: #343a40;
+    --c-bg-light: #495057;
+    --c-bg-lighter: #5a5a5a;
+    --c-bg-lightest: #717171;
+
+    --c-tx-darkest: #adb5bd;
+    --c-tx-darker: #bdc3c9;
+    --c-tx-dark: #ced4da;
+    --c-tx: #dee2e6;
+    --c-tx-light: #e9ecef;
+    --c-tx-lighter: #f0f0f0;
+    --c-tx-lightest: #ffffff;
+
+    --c-primary: #5a189a; 
+    --c-secondary: #8a5a44; 
+    --c-tertiary: #bc00dd;
+    --c-quaternary: #2ec4b6;
+    --c-neutral: #979dac;
+    /* Warning */
+    --c-yellow-dark: #ff7b00;
+    --c-yellow: #ff8800;
+    --c-yellow-light: #ff9500;
+    /* Error */
+    --c-red-dark: #640d14;
+    --c-red: #800e13;
+    --c-red-light: #ad2831;
+    /* Success */
+    --c-green-dark: #2d6a4f;
+    --c-green: #40916c;
+    --c-green-light: #52b788;
+    /* Info */
+    --c-blue-dark: #0077b6;
+    --c-blue: #00b4d8;
+    --c-blue-light: #90e0ef;
+
     --font-sora: "Sora", sans-serif;
     --font-code: "Source Code Pro", monospace;
     --font-grotesk: "Space Grotesk", sans-serif;
+
     color-scheme: dark;
 }
 
 * {
-  scroll-behavior: smooth
-}
-
-@layer base {
-    body {
-        @apply font-sans bg-n-8 text-n-1 text-base;
-    }
-}
-
-.rotate-45 {
-    @apply rotate-[45deg]
-}
-
-.rotate-90 {
-    @apply rotate-[90deg]
-}
-
-.rotate-135 {
-    @apply rotate-[135deg]
-}
-
-.rotate-180 {
-   @apply rotate-[180deg]
-}
-
-.rotate-225 {
-   @apply rotate-[225deg]
-}
-
-.rotate-270 {
-   @apply rotate-[270deg]
-}
-
-.rotate-315 {
-   @apply rotate-[315deg]
-}
-
-.rotate-360 {
-   @apply rotate-[360deg]
-}
-
-.-rotate-45 {
-   @apply rotate-[-45deg]
-}
-
-.-rotate-90 {
-   @apply rotate-[-90deg]
-}
-
-.-rotate-135 {
-   @apply rotate-[-135deg]
-}
-
-.-rotate-180 {
-   @apply rotate-[-180deg]
-}
-
-.-rotate-225 {
-    @apply rotate-[-225deg]
-  }
-  
-.-rotate-270 {
-    @apply rotate-[-270deg]
-}
-  
-.-rotate-315 {
-    @apply rotate-[-315deg]
-}
-  
-.-rotate-360 {
-    @apply rotate-[-360deg]
+    scroll-behavior: smooth;
 }
