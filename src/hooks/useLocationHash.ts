@@ -16,8 +16,6 @@ const useLocationHash = () => {
         setHash(getHash());
     }, [params]);
 
-    console.log("useLoacationHash: ", hash);
-
     return hash;
 }
 

@@ -20,7 +20,6 @@ const Header = () => {
     const hash = useLocationHash();
     
     const toggleMenu = () => {
-        console.log("hi header: ", openMenu)
         if(openMenu){
             setOpenMenu(false);
             enablePageScroll();

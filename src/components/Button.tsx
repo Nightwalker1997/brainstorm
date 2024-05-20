@@ -9,11 +9,13 @@ type ButtonProps = {
     className?: string;
     href?:      string;
     onClick?:   () => void;
+    white?: boolean;
 }
 
 const Button:FC<ButtonProps> = ({
     className,
     href,
+    white,
     onClick,
     children
 }) => {
@@ -24,17 +26,29 @@ const Button:FC<ButtonProps> = ({
         flex
         items-center
         justify-center
-        bg-bg-dark
+        
         px-4 py-1
         h-11
+        w-fit
         teansition-colors
-        hover:text-tx-darkest
         
-        border-none
         rounded-b-lg
         rounded-tl-lg
         rounded-tr-3xl
-
+    `,
+    white 
+    ?  `
+        bg-tx-light
+        text-bg-dark
+        border-2
+        border-bg-darkest
+        hover:text-bg-darkest
+        hover:bg-tx-dark
+    ` 
+    :   `
+        hover:text-tx-darkest
+        border-none
+        bg-bg-dark
         after:content-['']
         after:absolute
         after:h-[107%]
