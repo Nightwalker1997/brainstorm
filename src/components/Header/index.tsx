@@ -1,54 +1,83 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { navigation } from '@/constants';
-import { usePathname, useParams, useSearchParams,useRouter } from 'next/navigation';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import clsx from 'clsx';
-import { useEffect, useState } from 'react';
+import { disablePageScroll, enablePageScroll} from 'scroll-lock';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
+
 import useLocationHash from '@/hooks/useLocationHash';
-import Button from './Button';
+import { navigation } from '@/constants';
+import Button from "@/components/Button";
+import HamburgerMenu from './HamburgerMenu';
 
 const Header = () => {
 
+    const [openMenu, setOpenMenu] = useState(false);
     const hash = useLocationHash();
     
+    const toggleMenu = () => {
+        console.log("hi header: ", openMenu)
+        if(openMenu){
+            setOpenMenu(false);
+            enablePageScroll();
+        }else{
+            setOpenMenu(true);
+            disablePageScroll();
+        }
+    }
+
+    const handleClick = () => {
+        if(!openMenu) return;
+
+        setOpenMenu(false);
+        enablePageScroll();
+    }
 
     return(
         <div
-            className="
-                static 
+            className={clsx(`
+                fixed 
                 top-0
                 left-0
+                h-20
                 z-50 
                 w-full
-                bg-bg-dark
-                backdrop-blur-sm
+                lg:backdrop-blur-sm
                 border-b
                 border-bg-darker
-
+                mb-2.5
+                
                 flex
                 items-center
-                justify-between
-            "
+            `,
+            openMenu ? "bg-bg-darker" : "bg-bg-dark bg-opacity-80 backdrop-blur-sm"
+            )}
         >
           
             <div
                 className="
                     flex 
-                    items-center 
+                    items-center
+                    justify-between
+                    w-full
+                    
                     px-5 
                     lg:px-7.5 
                     xl:px-10 
                     max-lg:py-4
                 "
             >
+
                 <Link
                     href="#"
                     className="
                         flex 
                         items-center 
+                        z-30
                     "
                 >
                     <Image 
@@ -69,10 +98,9 @@ const Header = () => {
                 </Link>
 
                 <nav
-                    className="
-                        hidden
+                    className={clsx(`
                         fixed
-                        top-5
+                        top-20
                         left-0
                         right-0
                         bottom-0
@@ -81,17 +109,18 @@ const Header = () => {
                         lg:flex
                         lg:mx-auto
                         lg:bg-transparent
-
-                    "
+                    `,
+                        openMenu ? 'flex' : 'hidden'
+                    )}
                 >
                     <div
                         className="
                             relative
-                            z-2
                             flex
                             flex-col
                             items-center
                             justify-center
+                            w-full
                             m-auto
                             lg:flex-row
                         "
@@ -100,6 +129,7 @@ const Header = () => {
                             <Link 
                                 key={item.id} 
                                 href={item.url}
+                                onClick={handleClick}
                                 className={clsx(`
                                     block
                                     relative
@@ -125,38 +155,52 @@ const Header = () => {
                                 {item.title}
                             </Link>
                         ))}
+
                     </div>
+
+                    <HamburgerMenu />
+                
                 </nav>
-            </div>
-            <div 
-                className="
-                    hidden 
-                    lg:flex 
-                    lg:items-center
-                    lg:mr-12
-                "
-            >
-                <Link
-                    href="#signup"
+
+                <div 
                     className="
-                        button    
-                        hidden
-                        mr-8
-                        text-tx-darkest
-                        transition-colors
-                        hover:text-tx-lighter
-                        lg:block
+                        hidden 
+                        lg:flex 
+                        lg:items-center
+                        lg:mr-12
                     "
                 >
-                    New account
-                </Link>
-                <Button
-                    href="#login"
-                    className="hidden lg:flex"
-                >
-                    Sign In
-                </Button>
+                    <Link
+                        href="#signup"
+                        className="
+                            button    
+                            hidden
+                            mr-8
+                            text-tx-darkest
+                            transition-colors
+                            hover:text-tx-lighter
+                            lg:block
+                        "
+                    >
+                        New account
+                    </Link>
+                    <Button
+                        href="#login"
+                        className="hidden lg:flex"
+                    >
+                        Sign In
+                    </Button>
+                </div>
+
             </div>
+
+
+            <Button
+                    onClick={toggleMenu}
+                    className="mr-8 lg:hidden"
+                >
+                    <FontAwesomeIcon icon={openMenu ? faX : faBars} size='xl' />
+            </Button>
         </div>
     )
 }

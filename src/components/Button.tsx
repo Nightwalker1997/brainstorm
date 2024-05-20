@@ -48,9 +48,8 @@ const Button:FC<ButtonProps> = ({
         after:rounded-tl-lg
         after:rounded-tr-3xl
 
-        hover:z-1
-        hover:text-tx-lightest
-        hover:shadow
+        lg:hover:z-1
+        lg:hover:text-tx-lightest
     `,
     className);
 
@@ -61,7 +60,7 @@ const Button:FC<ButtonProps> = ({
 
     const renderButton = () => (
         <button
-            type='button'
+            onClick={onClick}
             className={classes}
         >
             <span className={spanClasses}>
