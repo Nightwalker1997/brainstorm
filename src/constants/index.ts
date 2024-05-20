@@ -35,11 +35,14 @@
 //     twitter,
 //     yourlogo,
 //   } from "../../public/assets";
+import { 
+    faIcons 
+} from '@fortawesome/free-solid-svg-icons';
 
-/**
+
 export const navigation = [
     {
-      id: "0",
+        id: "0",
         title: "Features",
         url: "#features",
     },
@@ -71,7 +74,8 @@ export const navigation = [
         onlyMobile: true,
     },
 ];
-  
+
+/**
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
   
 export const notificationImages = [notification4, notification3, notification2];
