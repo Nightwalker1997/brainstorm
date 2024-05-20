@@ -43,7 +43,7 @@ const Section:FC<SectionProps> = ({
                     absolute
                     top-0
                     w-0.25
-                    bg-bg-dark
+                    bg-tx-darkest
                     pointer-events-none
                     md:block
                     lg:right-7.5
@@ -59,7 +59,7 @@ const Section:FC<SectionProps> = ({
                     absolute
                     top-0
                     w-0.25
-                    bg-bg-dark
+                    bg-tx-darkest
                     pointer-events-none
                     md:block
                     lg:left-7.5
@@ -71,26 +71,23 @@ const Section:FC<SectionProps> = ({
             />
 
             {crosses && (
-                <>
-                    <div 
-                        className={clsx(`
-                            hidden
-                            absolute
-                            top-0
-                            left-7.5
-                            right-7.5
-                            h-0.25
-                            bg-bg-darker
-                            pointer-events-none
-                            md:block
-                            xl:left-10
-                            xl:right-10
-                        `,
-                            crossesOffset
-                        )}
-                    />
-                    <FontAwesomeIcon icon={faPlus} size='lg' />
-                </>
+                <div 
+                    className={clsx(`
+                        hidden
+                        absolute
+                        top-0
+                        left-7.5
+                        right-7.5
+                        h-0.25
+                        bg-tx-darkest
+                        pointer-events-none
+                        md:block
+                        xl:left-10
+                        xl:right-10
+                    `,
+                        crossesOffset
+                    )}
+                />
             )}
         </div>
     )
