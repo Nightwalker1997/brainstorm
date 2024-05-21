@@ -12,6 +12,7 @@ const Features = () => {
             id="features"
             crosses
             customPadding
+            className="z-10 bg-gray-700/75"
         >
             <div className="container relative z-2 pt-12 ">
                 <Heading 
@@ -25,7 +26,7 @@ const Features = () => {
                 />
 
                 <div 
-                    className="flex flex-wrap gap-10 mb-10"
+                    className="flex flex-wrap gap-10 pb-10"
                 >
                     {benefits.map(item => <Card item={item} key={item.id} />)}
                 </div>
