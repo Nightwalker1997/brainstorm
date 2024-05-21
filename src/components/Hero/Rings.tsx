@@ -1,0 +1,80 @@
+'use client';
+
+const Rings = () => {
+    return (
+        <div 
+            className="
+                absolute 
+                top-1/3
+                left-1/2
+                w-[64rem] 
+                aspect-square 
+                border 
+                border-purple-800/45
+
+                rounded-full 
+                -translate-x-1/2 
+                -translate-y-1/2
+            "
+        >
+            <div 
+                className="
+                    absolute 
+                    top-1/2 
+                    left-1/2 
+                    w-[52rem] 
+                    aspect-square 
+                    border 
+                    border-purple-800/40
+                    rounded-full 
+                    -translate-x-1/2 
+                    -translate-y-1/2
+                " 
+            />
+            <div 
+                className="
+                    absolute 
+                    top-1/2 
+                    left-1/2 
+                    w-[40rem] 
+                    aspect-square 
+                    border 
+                    border-purple-800/35
+                    rounded-full 
+                    -translate-x-1/2 
+                    -translate-y-1/2
+                " 
+            />
+            <div 
+                className="
+                    absolute 
+                    top-1/2 
+                    left-1/2 
+                    w-[28rem] 
+                    aspect-square 
+                    border 
+                    border-purple-800/30
+                    rounded-full
+                    -translate-x-1/2 
+                    -translate-y-1/2
+                " 
+            />
+            <div 
+                className="
+                    absolute 
+                    top-1/2 
+                    left-1/2 
+                    w-[14rem]
+                    aspect-square 
+                    border 
+                    border-purple-800/25
+                    rounded-full
+                    -translate-x-1/2 
+                    -translate-y-1/2
+                " 
+            />
+        </div>
+    );
+};
+
+export default Rings;

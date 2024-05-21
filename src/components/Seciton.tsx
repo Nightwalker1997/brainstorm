@@ -30,8 +30,8 @@ const Section:FC<SectionProps> = ({
             className={clsx(`
                 relative
             `, 
-                customPadding && "py-10 lg:py-16 xl:py-20",
-                crosses && "lg:py-32 xl:py-40",
+                customPadding || `py-10 lg:py-16 xl:py-20 ,
+                ${crosses ? "lg:py-32 xl:py-40" : ''}`,
                 className
             )}
         >
@@ -43,7 +43,8 @@ const Section:FC<SectionProps> = ({
                     absolute
                     top-0
                     w-0.25
-                    bg-tx-darkest
+                    bg-gray-50/35
+
                     pointer-events-none
                     md:block
                     lg:right-7.5
@@ -59,7 +60,8 @@ const Section:FC<SectionProps> = ({
                     absolute
                     top-0
                     w-0.25
-                    bg-tx-darkest
+                    bg-gray-50/35
+
                     pointer-events-none
                     md:block
                     lg:left-7.5
@@ -79,7 +81,7 @@ const Section:FC<SectionProps> = ({
                         left-7.5
                         right-7.5
                         h-0.25
-                        bg-tx-darkest
+                        bg-gray-50/35
                         pointer-events-none
                         md:block
                         xl:left-10

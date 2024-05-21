@@ -54,4 +54,66 @@
 
 * {
     scroll-behavior: smooth;
+
+     /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: var(--c-bg-lightest);
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: var(--c-bg-darkest);
+        border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--c-tx-lightest);
+    } 
+}
+
+
+.icon-instagram{
+    @apply bg-gradient-to-br 
+    from-[#833ab4] 
+    via-[#fd1d1d] 
+    to-[#fcb045] 
+    text-transparent
+    bg-clip-text;
+
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.icon-youtube{
+    color: #FF0000;
+
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.icon-facebook{
+    color: #4267B2;
+
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.icon-twitter{
+    color: #1DA1F2;
+
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.icon-telegram{
+    color: #0088cc;
+
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
 }

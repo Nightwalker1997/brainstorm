@@ -43,7 +43,7 @@ const Button:FC<ButtonProps> = ({
         border-2
         border-bg-darkest
         hover:text-bg-darkest
-        hover:bg-tx-dark
+        
     ` 
     :   `
         hover:text-tx-darkest

@@ -35,8 +35,12 @@
 //     twitter,
 //     yourlogo,
 //   } from "../../public/assets";
+
 import { 
-    faIcons 
+    faIgloo,
+    faPaste,
+    faSearch,
+    faPlusSquare, 
 } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -75,13 +79,44 @@ export const navigation = [
     },
 ];
 
+export const heroIcons = [faIgloo, faPaste, faSearch, faPlusSquare];
+
+export const notificationImages = ['/static/notification/image-2.png', '/static/notification/image-3.png', '/static/notification/image-4.png'];
+
+export const companyLogos = [
+    { 
+        id: 1,
+        name: "YouTube",
+        src: '/icons/youtube.png',
+        class: 'icon-youtube'
+    },
+    { 
+        id: 2,
+        name: "Instagram",
+        src: '/icons/instagram.png',
+        class: 'icon-instagram',
+    },
+    { 
+        id: 3,
+        name: "Facebook",
+        src: '/icons/facebook.png',
+        class: 'icon-facebook',
+    },
+    { 
+        id: 4,
+        name: "Twitter",
+        src: '/icons/twitter.png',
+        class: 'icon-twitter',
+    },
+    { 
+        id: 5,
+        name: "Telegram",
+        src: '/icons/telegram.png',
+        class: 'icon-telegram',
+    }
+];
+
 /**
-export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
-  
-export const notificationImages = [notification4, notification3, notification2];
-  
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
-  
 export const brainwaveServices = [
     "Photo generating",
     "Photo enhance",
