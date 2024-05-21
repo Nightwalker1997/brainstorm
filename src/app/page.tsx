@@ -1,6 +1,7 @@
 import Collaboration from "@/components/Collaboration";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
+import Services from "@/components/Services";
 
 const Home = () => {
     return (
@@ -8,6 +9,7 @@ const Home = () => {
             <Hero />
             <Features />
             <Collaboration />
+            <Services />
         </main> 
     );
 }

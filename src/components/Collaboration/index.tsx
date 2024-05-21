@@ -131,6 +131,7 @@ const Collaboration = () => {
                                         rotate-${
                                             index * 45 
                                         }
+                                        
                                     `}    
                                 >
                                     <div 
@@ -145,6 +146,7 @@ const Collaboration = () => {
                                             rounded-xl
                                             p-2
                                             bg-opacity-5
+                                            shadow-[0_0_2px_5px_rgba(0,0,0,0.3)]
                                         `}
                                     >
                                         <Image
