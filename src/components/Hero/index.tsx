@@ -194,7 +194,7 @@ const Hero = () => {
                         <Gradient />
                     </div>
                     
-                    <div className="flex fixed top-0 right-0 bottom-0 left-0 z-[-1]">
+                    <div className="inline-flex fixed top-0 right-0 bottom-0 left-0 z-[-1]">
                         <div className="flex shrink-0">
                             <Image
                                 src={"/static/wp7865107-robot-ultra-hd-wallpapers.jpg"}
@@ -211,6 +211,7 @@ const Hero = () => {
                         </div>
                         <BackgroundCircles parallaxRef={parallaxRef} />
                     </div>
+
                 </div>
 
                 <CompanyLogos />
