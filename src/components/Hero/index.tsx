@@ -7,10 +7,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { heroIcons } from '@/constants';
 import Section from '@/components/Seciton';
+import Generating from '@/components/Generating';
+import Button from '@/components/Button';
 import BackgroundCircles from './BackgroundCircles';
 import Gradient from './Gradient';
-import Button from '../Button';
-import Generating from './Generating';
 import Notification from './Notification';
 import CompanyLogos from './CompanyLogos';
 

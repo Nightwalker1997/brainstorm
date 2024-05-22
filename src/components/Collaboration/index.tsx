@@ -74,7 +74,7 @@ const Collaboration = () => {
                         className="
                             relative 
                             left-1/2
-                            flex mb-12
+                            flex 
                             w-96 aspect-square 
                             border border-bg-darker 
                             rounded-full 
@@ -172,6 +172,7 @@ const Collaboration = () => {
                     </div>
                 </div>
             </div>
+            <div className="xl:h-20 lg:h-16 md:h-12 h-8" />
         </Section>
     )
 }

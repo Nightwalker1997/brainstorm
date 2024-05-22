@@ -4,10 +4,12 @@ import clsx from "clsx";
 
 const Heading = ({
     title,
-    className
+    className,
+    text
 }:{
     title?: string,
-    className?: string
+    className?: string,
+    text?: string
 }) => {
     return (
         <div
@@ -22,6 +24,7 @@ const Heading = ({
                     {title}
                 </h2>  
             }
+            {text && <p className="body-2 mt-4 text-tx-base">{text}</p>}
         </div>
     )
 }

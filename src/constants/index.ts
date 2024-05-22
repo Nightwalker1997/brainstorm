@@ -45,7 +45,12 @@ import {
     faUpDownLeftRight,
     faNetworkWired,
     faTruckFast,
-    faMessage, 
+    faMessage,
+    faSquareRss,
+    faCompactDisc,
+    faMicrophone,
+    faSliders,
+    faPodcast, 
 } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -121,21 +126,21 @@ export const companyLogos = [
     }
 ];
 
-/**
+
 export const brainwaveServices = [
     "Photo generating",
     "Photo enhance",
     "Seamless Integration",
 ];
-  
+
 export const brainwaveServicesIcons = [
-    recording03,
-    recording01,
-    disc02,
-    chromecast,
-    sliders04,
+    faPodcast,
+    faMicrophone,
+    faCompactDisc,
+    faSquareRss,
+    faSliders,
 ];
-  
+/**
 export const roadmap = [
     {
         id: "0",

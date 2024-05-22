@@ -1,7 +1,7 @@
 'use client';
 
 import Section from "@/components/Seciton";
-import Heading from "./Heading";
+import Heading from "@/components/Heading";
 import { benefits } from "@/constants";
 import Card from "./Card";
 

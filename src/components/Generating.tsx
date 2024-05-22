@@ -15,8 +15,7 @@ const Generating = ({
             className={clsx(`
                 flex 
                 items-center 
-                h-12 
-                w-12
+                h-12
                 px-6
                 bg-bg-darker
                 bg-opacity-80
@@ -26,7 +25,11 @@ const Generating = ({
                 className
             )}
         >
-            <FontAwesomeIcon icon={faSpinner} className="pr-2.5 text-primary" size="lg"/>
+            <FontAwesomeIcon 
+                icon={faSpinner} 
+                size="lg"
+                className="pr-2.5 text-primary" 
+            />
             <span className="font-semibold">
                 AI is generating
             </span>
