@@ -140,7 +140,7 @@ export const brainwaveServicesIcons = [
     faSquareRss,
     faSliders,
 ];
-/**
+
 export const roadmap = [
     {
         id: "0",
@@ -148,7 +148,7 @@ export const roadmap = [
         text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
         date: "May 2023",
         status: "done",
-        imageUrl: roadmap1,
+        imageUrl: "/static/roadmap/image-1.png",
         colorful: true,
     },
     {
@@ -157,7 +157,7 @@ export const roadmap = [
         text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
         date: "May 2023",
         status: "progress",
-        imageUrl: roadmap2,
+        imageUrl: "/static/roadmap/image-2.png"
     },
     {
         id: "2",
@@ -165,7 +165,7 @@ export const roadmap = [
         text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
         date: "May 2023",
         status: "done",
-        imageUrl: roadmap3,
+        imageUrl: "/static/roadmap/image-3.png",
     },
     {
         id: "3",
@@ -173,11 +173,11 @@ export const roadmap = [
         text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
         date: "May 2023",
         status: "progress",
-        imageUrl: roadmap4,
+        imageUrl: "/static/roadmap/image-4.png",
     },
 ];
   
-*/
+
 
 export const collabText =
     "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
@@ -203,8 +203,8 @@ export const collabApps = [
         id: "0",
         title: "Figma",
         icon: '/icons/figma.png',
-        width: 48,
-        height: 48,
+        width: 32,
+        height: 32,
     },
     {
         id: "1",
