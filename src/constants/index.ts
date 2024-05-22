@@ -256,7 +256,7 @@ export const collabApps = [
         height: 32,
     },
 ];
-/**
+
 export const pricing = [
     {
         id: "0",
@@ -292,7 +292,7 @@ export const pricing = [
         ],
     },
 ];
-*/
+
 export const benefits = [
     {
         id: "0",

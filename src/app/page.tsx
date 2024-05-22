@@ -1,6 +1,8 @@
 import Collaboration from "@/components/Collaboration";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
+import Pricing from "@/components/Pricing";
+import RoadMap from "@/components/Roadamp";
 import Services from "@/components/Services";
 
 const Home = () => {
@@ -10,6 +12,8 @@ const Home = () => {
             <Features />
             <Collaboration />
             <Services />
+            <Pricing />
+            <RoadMap />
         </main> 
     );
 }
