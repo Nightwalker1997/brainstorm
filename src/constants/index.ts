@@ -36,6 +36,7 @@
 //     yourlogo,
 //   } from "../../public/assets";
 
+import { faDiscord, faFacebook, faInstagram, faTelegram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { 
     faIgloo,
     faPaste,
@@ -345,38 +346,36 @@ export const benefits = [
         imageUrl: '/static/features/image-1.jpg',
     },
 ];
-/** 
+
 export const socials = [
     {
         id: "0",
         title: "Discord",
-        iconUrl: discordBlack,
+        iconUrl: faDiscord,
         url: "#",
     },
     {
         id: "1",
         title: "Twitter",
-        iconUrl: twitter,
+        iconUrl: faTwitter,
         url: "#",
     },
     {
         id: "2",
         title: "Instagram",
-        iconUrl: instagram,
+        iconUrl: faInstagram,
         url: "#",
     },
     {
         id: "3",
         title: "Telegram",
-        iconUrl: telegram,
+        iconUrl: faTelegram,
         url: "#",
     },
     {
         id: "4",
         title: "Facebook",
-        iconUrl: facebook,
+        iconUrl: faFacebook,
         url: "#",
     },
 ];
-
-*/

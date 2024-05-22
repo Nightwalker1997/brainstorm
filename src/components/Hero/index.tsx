@@ -191,8 +191,8 @@ const Hero = () => {
                                 </ScrollParallax>
                             </div>
                         </div>
-                        <Gradient />
                     </div>
+                        <Gradient />
                     
                     <div className="inline-flex fixed top-0 right-0 bottom-0 left-0 z-[-1]">
                         <div className="flex shrink-0">

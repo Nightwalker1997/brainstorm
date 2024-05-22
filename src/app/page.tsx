@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
 import RoadMap from "@/components/Roadamp";
 import Services from "@/components/Services";
+import Footer from '@/components/Footer';
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Services />
             <Pricing />
             <RoadMap />
+            <Footer />
         </main> 
     );
 }

@@ -7,28 +7,21 @@ const Gradient = () => {
                 className="
                     relative 
                     z-1 
-                    h-6 
-                    mx-2.5 
-                    bg-bg-dark 
-                    border-b-[1px]
-                    shadow-xl 
+                    h-2 lg:h-3
+                    mx-4 lg:mx-12 
+                    pt-2 
+                    bg-green-900/60
                     rounded-b-3xl
-                    lg:h-6 
-                    lg:mx-8
                 " 
             />
             <div 
                 className="
                     relative 
                     z-1 
-                    h-6 
-                    mx-6 
-                    bg-bg-light
-                    bg-opacity-40
-                    shadow-xl 
+                    h-2 lg:h-3
+                    mx-8 lg:mx-24
+                    bg-green-600/40
                     rounded-b-3xl
-                    lg:h-6 
-                    lg:mx-20
                 " 
             />
         </>
